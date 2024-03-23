@@ -1,0 +1,45 @@
+=>CDN- Content Delivery Network.
+    Whenever a user to trying to access a webpage that is hosted in a server which
+    is geographically far away from user, the webpage loading becomes slow.
+    Inorder to tackle this situation, CDN servers are introduced, which is closer to user.
+    This will help in faster webpage loading.
+    Benefits of CDN
+        Less page load time.
+        Content is available even if one or more servers are offline, since data can be fetched from
+        other CDN servers.
+        Better web security as CDN servers can handle large requests and distribute among different CDN servers.
+        This will help in preventing DDos attacks.
+
+=>CDN and react
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"  // used for importing React .js file
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" // used for ReactDOM file
+    ></script>
+    <script src="script.js"> </script>
+
+    =>  This particular order should be maintained because it will show the error
+        Uncaught ReferenceError: React is not defined
+        at index.html:11:23
+        index.html:30 Uncaught ReferenceError: ReactDOM is not defined
+        at index.html:30:20
+
+    =>  crossorigin in script tag
+        Crossorigin attribute is used when a script on one domain is trying to fetch or interact with resources from another domain.
+        Here we're are fetching CDN links of React.
+
+=>React.createElement will create react element or javascript object
+    React.createElement("div",{id:"container","Hello World"});
+        first parameter    => div = tagName
+        second parameter   =>{id:"container"} = attributes of tag
+        third parameter    =>"Hello World" = Children or content inside tag
+                             this can be array of react elements if we are nesting elements
+
+=>ReactDOM.createRoot(document.getElementById("root"))
+  root.render(reactElement) will convert it to corresponding HTML equivalent.
+
+
+
