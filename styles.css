@@ -1,3 +1,32 @@
 #heading {
   color: red;
 }
+#root,
+body {
+  margin: 0px;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(99, 107, 220);
+  margin: 0px;
+}
+.logo {
+  width: 100px;
+  height: 60px;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
+  padding-right: 20px;
+}
+
+.search {
+  height: 25px;
+  width: 280px;
+  border-radius: 6px;
+  border: none;
+}
